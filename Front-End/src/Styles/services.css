@@ -1,0 +1,284 @@
+
+.TitleService{
+    font-family: 'Dancing Script', sans-serif;
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: #cbb88f;
+}
+.Group1{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-evenly;  
+    margin: 20px 0;
+}
+.Group2{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-evenly;  
+    margin: 20px 0;
+}
+.hydro{
+    background-image: url(./../assets/Hydrotherapie.jpg);
+    display: block;
+    background-size: cover;
+    width: 450px;
+    height: 400px;
+    filter: brightness(.5);
+}
+.Group1 span:hover{
+    transition: 0.4ms;
+    filter: brightness(1);
+}
+.Group2 span:hover{
+    transition: 0.4ms;
+    filter: brightness(1);
+}
+.rituel{
+    background-image: url(./../assets/Rituel.jpg);
+    display: block;
+    background-size: cover;
+    width: 450px;
+    height: 400px;
+    filter: brightness(.5);
+}
+.produits{
+    background-image: url(./../assets/produits.jpg);
+    display: block;
+    background-size: cover;
+    width: 450px;
+    height: 400px;
+    filter: brightness(.5);
+}
+.Group1 span:nth-child(2):hover{
+    transition: 0.7;
+    filter: brightness(1);
+    
+}
+.soin{
+    background-image: url(./../assets/soin.jpg);
+    display: block;
+    background-size: cover;
+    width: 450px;
+    height: 400px;
+    filter: brightness(.5);
+}
+.Group1 span:nth-child(3):hover{
+    transition: 0.7;
+    filter: brightness(1);
+    
+}
+.Group1 div{
+    width: 50%;
+}
+.Group1 div p{
+    font-size: 20px;
+    line-height: 33px;
+}
+.Group2 div{
+    width: 50%;
+}
+.Group2 div p{
+    font-size: 20px;
+    line-height: 33px;
+}
+.Abonnement{
+    background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(203,184,143,1) 37%, rgba(255,255,255,1) 100%);
+    height: auto;
+    width: 100%;
+    padding: 20px 60px;
+}
+.showProduit{
+    color: #cbb88f;
+    margin-top: 20px;
+}
+.cardd{
+    width: 30%;
+    height: 200px;
+    border: none;
+}
+aside{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.cardd h2{
+    color: white;
+}
+.cardd p{
+    color: rgb(175, 175, 175);
+}
+button{
+    
+    background-color: #cbb88f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.ball{
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 50%;
+    background-color: #bcbcbc;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+    gap: 10px;
+    color: #bcbcbc;
+}
+.wall{
+    width: 4px;
+    height: 30px;
+    display: block;
+    background-color: #bcbcbc;
+}
+@media screen and (max-width:1090px) {
+    .hydro{
+        width: 350px;
+        height: 300px;
+    }
+    .rituel{
+        width: 350px;
+        height: 300px;
+    }
+    .produits{
+        width: 350px;
+        height: 300px;
+    }.soin{
+        width: 350px;
+        height: 300px;
+    }
+    .Group1 div p{
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .Group2 div p{
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+@media screen and (max-width:900px){
+    .Group1{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:780px){
+    .TitleService{
+        font-size: 35px;
+    }
+    .therapy{
+        font-size: 25px;
+    }
+    .cardd p:nth-child(2) {
+        padding: 10px 0;
+        text-align: center;
+        font-size: 13px;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    .Group1{
+        
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+    .Group2{
+        padding: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+    .tit{
+        margin-top: 0;
+    }
+    .ball {
+        width: 20px;
+        height: 20px;
+    }
+    .wall{
+        height: 20px;
+    }
+    .Abonnement{
+        padding: 20px 40px;
+    }
+}
+@media screen and (max-width:590px){
+    .Group1 div{
+        width: 65%;
+    }
+    .Group2 div{
+        width: 65%;
+    }
+    .TitleService {
+        font-size: 25px;
+    }
+    .therapy {
+        font-size: 20px;
+    }
+    .cardd p:nth-child(2) {
+        font-size: 10px;
+    }
+    button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .bien{
+        font-size: 12px;
+    }
+    .ball {
+        width: 15px;
+        height: 15px;
+    }.wall{
+        height: 15px;
+    }
+}
+@media screen and (max-width:450px){
+    .hydro{
+        width: 250px;
+        height: 200px;
+    }
+    .rituel{
+        width: 250px;
+        height: 200px;
+    }
+    .produits{
+        width: 250px;
+        height: 200px;
+    }.soin{
+        width: 250px;
+        height: 200px;
+    }
+    .Group1 div p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .Group2 div p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .Group2 div {
+        width: 78%;
+    }
+    .Group1 div {
+        width: 78%;
+    }
+    .TitleService {    
+        font-size: 35px;
+    }
+    .Abonnement{
+        padding: 20px;
+    }
+    .cont{
+        gap: 5px;
+    }
+}

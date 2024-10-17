@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.Head span{
+    background-image: url('./../assets/boutiqueImage.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: block;
+
+}
+.Head h1{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 40px;
+}
+.Head{
+    filter: brightness(.4);
+}
+form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.Contact{
+    margin-top: 40px;
+    display: flex;
+    padding: 20px 40px;
+    gap: 20px;
+
+}
+
+input{
+    height: 40px;
+    padding: 5px 10px;
+    outline: none;
+    margin: 10px 0;
+    border: 1px rgba(107, 107, 107, 0.5) solid;
+    border-radius: 10px;
+}
+textarea{
+    height: 90px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+    border: none;
+    
+    margin: 8px 0;
+    width: 100%;
+}
+.mail{
+    background-color: #cbb88f;
+    height: 35px;
+    color: white;
+    border-radius: 10px;
+    border: white solid;
+    
+}
+
+.InfoCon{
+    display: flex;
+    flex-direction: column;
+}
+.InfoCon span{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(96 96 96);
+}
+h2{
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 40px;
+    color: #cbb88f;
+}
+.infoMail{
+    padding: 10px 30px;
+}
+.infoMail p{
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: rgb(96 96 96);
+    
+}
+
+strong{
+    color: #cbb88f;
+}
+.Carte{
+    margin-top: 40px;
+}
+@media screen and (max-width:900px) {
+    .Contact{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:900px){
+    form{
+        width: 85%;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .infoMail p{
+        font-size: 14px;
+    }
+    .InfoCon span{
+        font-size: 14px;
+    }
+    .infoMail{
+        padding: 0;
+    }
+}

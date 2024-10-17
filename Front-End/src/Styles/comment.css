@@ -1,0 +1,21 @@
+
+.form-comment{
+    width: 100%;
+}
+h5{
+    margin-bottom: 0;
+}
+.comment-block{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.comment{
+    padding: 10px 15px;
+    background-color: #e0cb9f;
+    border-radius: 5px;
+}
+.commenter{
+    background-color: #e0cb9f;
+}

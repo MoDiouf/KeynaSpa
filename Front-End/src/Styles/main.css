@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --mainColor: #cbb88f;
+  --mainColorLight: var(--mainColor);
+}
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cbb88f;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 4rem;
+  background-color: var(--mainColor);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.logoContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.logoName {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transform: translate(7%, -90%);
+  font-size: 20px;
+}
+.shop {
+  position: absolute;
+  right: 3%;
+  font-size: 22px;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  opacity: 1;
+}
+.logo {
+  background-image: url("./../assets/KeynaSpa.svg");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: relative;
+  top: -15px;
+}
+
+.logoFooter {
+  background-image: url("./../assets/KeynaSpaFooter.svg");
+  background-size: cover;
+  width: 80px;
+  height: 62px;
+  display: block;
+  position: relative;
+  bottom: -10px;
+}
+.block p {
+  position: relative;
+  bottom: -25px;
+}
+.submenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #cbb88f;
+  right: -130%;
+  top: 100%;
+  transform: translate(20%, 0%);
+  padding: 10px;
+  z-index: 1;
+}
+nav {
+  font-size: 20px;
+}
+nav a {
+  margin: 0 2rem;
+  text-decoration: none;
+  color: white;
+  padding: 10px 5px;
+}
+nav a:hover {
+  color: #fada93;
+  text-decoration: none;
+}
+/* main.css */
+
+/* Styles de base pour le soulignage */
+nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+/* Pseudo-éléments pour le soulignage */
+nav a::before,
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff; /* Couleur du soulignage */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* Transition vers l'effet complet lors du survol */
+nav a:hover::before,
+nav a:hover::after {
+  left: 0;
+  width: 50%;
+}
+
+/* Effet complet lorsque survolé */
+nav a:hover::before {
+  left: 0;
+}
+
+nav a:hover::after {
+  left: 50%;
+}
+
+header .nav-btn {
+  display: none;
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+}
+.slider {
+  height: 500px;
+  filter: brightness(0.7);
+}
+.introduction {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  padding: 0 100px;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, 0%);
+}
+.introduction h1 {
+  text-align: left;
+  font-size: 45px;
+  font-weight: 400;
+}
+.introduction span {
+  font-size: 40px;
+  font-family: "Dancing Script", sans-serif;
+}
+.image {
+  width: 50%;
+  height: 300px;
+  display: block;
+  background-image: url("./../assets/blob.svg");
+  background-size: cover;
+}
+.text {
+  width: 50%;
+}
+.text h1 {
+  font-family: "Dancing Script", sans-serif;
+  margin: 0 0 30px 0;
+  font-size: 40px;
+  color: #cbb88f;
+}
+.text p {
+  color: gray;
+  margin-bottom: 20px;
+}
+.evens {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.evens span {
+  font-size: 30px;
+}
+.effect {
+  background-image: url("./../assets/Piscine.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  filter: brightness(0.7);
+}
+.containerr {
+  position: relative;
+}
+.peace {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.peace div {
+  display: flex;
+  align-items: center;
+  gap: 25%;
+}
+.peaces {
+  display: flex;
+  padding: 0 120px;
+}
+.Apeace {
+  display: flex;
+  flex-direction: column;
+}
+.Apeace div {
+  width: 290px;
+}
+.title {
+  text-align: center;
+  margin: 80px 0 10px 0;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 40px;
+}
+.textpeace {
+  font-size: 25px;
+}
+.infoKeyna {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin: 40px 0;
+}
+.range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cbb88f;
+  width: 80%;
+  height: 60%;
+  gap: 30px;
+  border-radius: 15px;
+}
+footer {
+  padding: 20px 50px;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.block {
+  width: 30%;
+}
+.range div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.range div span:first-child {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #cbb88f;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.icone {
+  background-image: url("./../assets/Lys.svg");
+  background-size: cover;
+  width: 30px;
+  height: 40px;
+  zoom: 2;
+}
+.About {
+  display: flex;
+  padding: 80px 100px;
+  gap: 10%;
+}
+.foot {
+  color: #cbb88f;
+  text-align: center;
+}
+.listFoot {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.listFoot li a {
+  text-decoration: none;
+  color: black;
+}
+.formFoot {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
+}
+.formFoot input {
+  height: 25px;
+  padding: 5px 10px;
+  border: gray solid 1px;
+  border-radius: 5px;
+}
+.formFoot button {
+  height: 30px;
+  background-color: #cbb88f;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 9px 45px;
+}
+.All {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #cbb88f;
+  color: white;
+  height: 60px;
+  align-items: center;
+}
+.links a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.links {
+  margin-top: 10px;
+  position: relative;
+  bottom: -25px;
+}
+.logoNameFooter {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  position: relative;
+  bottom: -10px;
+}
+@media screen and (max-width: 1024px) {
+  header .nav-btn {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    font-size: 20px;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+    transform: translateY(-100vh);
+    flex-direction: column;
+    font-size: 30px;
+    gap: 40px;
+  }
+  header .responsive-nav {
+    transform: none;
+    z-index: 2;
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    transform: translate(-50%, -50%);
+  }
+  .peace div {
+    gap: 10%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .About {
+    flex-direction: column;
+    align-items: center;
+  }
+  .peace div {
+    gap: 5%;
+  }
+  .textpeace {
+    font-size: 17px;
+  }
+  .icone {
+    width: 25px;
+    height: 30px;
+  }
+  .foot {
+    font-size: 20px;
+  }
+  .text {
+    width: 80%;
+    margin-top: 30px;
+  }
+  .block p{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .peaces {
+    padding: 0 70px;
+  }
+  .range div span:nth-child(2) {
+    font-size: 13px;
+  }
+  .range div span:first-child {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .range {
+    gap: 0;
+  }
+  .range div {
+    gap: 5px;
+  }
+  .block p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 678px) {
+  footer {
+    padding: 20px 20px;
+  }
+  .peace div {
+    gap: 0;
+  }
+  .peaces {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  header {
+    height: 85px;
+  }
+  .introduction {
+    top: 55%;
+    padding: 0 40px;
+  }
+  .textpeace {
+    font-size: 14px;
+  }
+  .Apeace div {
+    width: 175px;
+  }
+  .introduction h1 {
+    font-size: 30px;
+  }
+  .Apeace div {
+    width: 200px;
+  }
+  .infoKeyna {
+    height: 150px;
+  
+  }
+  header nav{
+    gap: 0;
+    font-size: 14px;
+  }
+  .range {
+    width: 90%;
+    height: 45%;
+    gap: 10px;
+  }
+  .range div span:nth-child(2) {
+    font-size: 10px;
+  }
+  .range div span:first-child {
+    width: 20px;
+    height: 20px;
+    font-size: 9px;
+  }
+  .foot {
+    font-size: 12px;
+  }
+  .logoName {
+    transform: translate(-45%, -75%);
+    font-size: 13px;
+  }
+  .logo {
+    left: -45%;
+    top: -6px;
+  }
+  .shop{
+    right: 7%;
+    font-size: 17px;
+  }
+  header .nav-btn{
+    font-size: 17px;
+  }
+  .text{
+    font-size: 13px;
+  }
+  footer {
+    gap: 15px;
+    padding: 10px;
+  }
+  .listFoot li a {
+    font-size: 10px;
+  }
+  .block p {
+    font-size: 9px;
+    margin-top: 10px;
+  }
+  .About {
+    display: flex;
+    padding: 80px 10px;
+  }
+  .All {
+    height: 35px;
+  }
+  .All span {
+    font-size: 10px;
+  }
+  .infoKeyna {
+    margin: 0;
+  }
+  .listFoot {
+    gap: 0px;
+    margin-top: 10px;
+  }
+  .logoNameFooter{
+    font-size: 12px;
+    bottom: -25px;
+  }
+  .formFoot button {
+    height: 20px;
+    font-size: 12px;
+  }
+  .links a {
+    font-size: 14px;
+  }
+  .logoFooter{
+    width: 43px;
+    height: 40px;
+    display: block;
+    position: relative;
+    bottom: -30px;
+  }
+  .logo{
+    width: 65px;
+    height: 65px;
+  }
+  .formFoot{
+    gap: 0;
+  }
+  .formFoot input {
+    height: 20px;
+    padding: 5px 10px;
+    border: gray solid 1px;
+    border-radius: 3px;
+}
+.formFoot button{
+  border-radius: 4px;
+  font-size: 9px;
+  padding: 3px 10px;
+}
+}
