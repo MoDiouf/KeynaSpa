@@ -1,4 +1,4 @@
-# KeynaSpa - Backend
+<img width="1280" alt="Capture d’écran 2025-05-12 à 13 42 15" src="https://github.com/user-attachments/assets/f3dba416-d95d-4065-95c7-1ff82e4cf652" /># KeynaSpa - Backend
 
 Backend for the KeynaSpa project, a basic e-commerce platform built with Node.js, Express, and MySQL. This backend provides routes for managing products, users, admins, and newsletters, as well as integration with the PayTech payment API.
 
@@ -104,6 +104,11 @@ Ensure the following environment variables are correctly set:
 * `API_KEY` (PayTech API key)
 * `API_SECRET` (PayTech API secret)
 
+
+
+
 ## License
 
 This project is licensed under the MIT License.
+<img width="1280" alt="Capture d’écran 2025-05-12 à 13 41 47" src="https://github.com/user-attachments/assets/23e28543-acb2-4276-9c2c-e25e51afa709" />
+<img width="1280" alt="Capture d’écran 2025-05-12 à 13 42 15" src="https://github.com/user-attachments/assets/e4a33eb5-c35e-48cb-9077-74b8cb0e49bf" />
